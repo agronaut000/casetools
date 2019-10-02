@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-09-13" view-index="0" gantt-divider-location="245" resource-divider-location="517" version="2.8.9" locale="ru">
+    <description/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Название" width="121" order="0"/>
+        <field id="tpd4" name="Дата начала" width="39" order="1"/>
+        <field id="tpd5" name="Дата окончания" width="66" order="2"/>
+        <option id="color.recent"><![CDATA[#000000]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Имя" width="318" order="0"/>
+        <field id="1" name="Стандартная роль" width="195" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Определение тематики минипроекта" color="#8cb6ce" meeting="false" start="2018-09-10" duration="5" complete="0" thirdDate="2018-09-10" thirdDate-constraint="0" expand="true">
+            <depend id="75" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="75" name="Проект выбран" color="#8cb6ce" meeting="true" start="2018-09-17" duration="0" complete="0" thirdDate="2018-10-03" thirdDate-constraint="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="5" type="2" difference="0" hardness="Rubber"/>
+            <depend id="37" type="2" difference="3" hardness="Strong"/>
+            <depend id="56" type="2" difference="0" hardness="Rubber"/>
+            <depend id="95" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" name="Составление плана проекта" color="#000000" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" start="2018-09-20" duration="3" complete="0" thirdDate="2018-09-20" thirdDate-constraint="0" expand="true">
+            <depend id="90" type="2" difference="0" hardness="Strong"/>
+            <task id="37" name="Описание основных функций проекта" color="#8cb6ce" meeting="false" start="2018-09-20" duration="3" complete="0" thirdDate="2018-09-17" thirdDate-constraint="0" expand="true">
+                <depend id="38" type="1" difference="0" hardness="Strong"/>
+                <depend id="39" type="1" difference="0" hardness="Strong"/>
+                <depend id="40" type="1" difference="0" hardness="Strong"/>
+                <depend id="90" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="38" name="Описание ограничений на процесс разработки" color="#8cb6ce" meeting="false" start="2018-09-20" duration="3" complete="0" thirdDate="2018-09-20" thirdDate-constraint="0" expand="true">
+                <depend id="90" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="39" name="Разработка временного плана работ" color="#8cb6ce" meeting="false" start="2018-09-20" duration="3" complete="0" thirdDate="2018-09-20" thirdDate-constraint="0" expand="true">
+                <depend id="90" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="40" name="Разработка формы отчетности и взаимодействия" color="#8cb6ce" meeting="false" start="2018-09-20" duration="3" complete="0" thirdDate="2018-09-20" thirdDate-constraint="0" expand="true">
+                <depend id="90" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="90" name="План проекта составлен" color="#8cb6ce" meeting="true" start="2018-09-25" duration="0" complete="0" thirdDate="2018-09-17" thirdDate-constraint="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <depend id="16" type="2" difference="0" hardness="Rubber"/>
+            <depend id="95" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" name="Составление спецификации требований" meeting="false" start="2018-09-26" duration="7" complete="0" expand="true">
+            <task id="16" name="Разработка критериев аттестации" color="#8cb6ce" meeting="false" start="2018-09-26" duration="3" complete="0" thirdDate="2018-09-26" thirdDate-constraint="0" expand="true">
+                <depend id="17" type="1" difference="0" hardness="Rubber"/>
+                <depend id="18" type="1" difference="0" hardness="Rubber"/>
+                <depend id="19" type="1" difference="0" hardness="Rubber"/>
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="17" name="Разработка функциональных требований" color="#8cb6ce" meeting="false" start="2018-09-26" duration="3" complete="0" thirdDate="2018-09-26" thirdDate-constraint="0" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="18" name="Разработка высокоуровневой архитектуры" color="#8cb6ce" meeting="false" start="2018-09-26" duration="3" complete="0" thirdDate="2018-09-26" thirdDate-constraint="0" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="19" name="Разработка модели предметной области и функциональной модели" color="#8cb6ce" meeting="false" start="2018-09-26" duration="3" complete="0" thirdDate="2018-09-26" thirdDate-constraint="0" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="22" name="Обработка разработанной информации" color="#8cb6ce" meeting="false" start="2018-10-01" duration="4" complete="0" thirdDate="2018-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="84" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="84" name="Спецификация требований разработана" color="#8cb6ce" meeting="true" start="2018-10-05" duration="0" complete="0" thirdDate="2018-09-24" thirdDate-constraint="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="51" type="2" difference="6" hardness="Strong"/>
+            <depend id="95" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" name="Проектирование" meeting="false" start="2018-10-15" duration="19" complete="0" expand="true">
+            <depend id="101" type="2" difference="0" hardness="Strong"/>
+            <task id="51" name="Разработка проекта архитектуры" color="#8cb6ce" meeting="false" start="2018-10-15" duration="9" complete="0" thirdDate="2018-10-15" thirdDate-constraint="0" expand="true">
+                <depend id="52" type="1" difference="0" hardness="Rubber"/>
+                <depend id="53" type="1" difference="0" hardness="Rubber"/>
+                <depend id="108" type="2" difference="0" hardness="Strong"/>
+                <depend id="110" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="52" name="Разработка высокоуровневого описания взаимодействия подсистем и модулей" color="#8cb6ce" meeting="false" start="2018-10-15" duration="9" complete="0" thirdDate="2018-10-15" thirdDate-constraint="0" expand="true">
+                <depend id="108" type="2" difference="0" hardness="Strong"/>
+                <depend id="110" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="53" name="Разработка интерфейса пользователя" color="#8cb6ce" meeting="false" start="2018-10-15" duration="9" complete="0" thirdDate="2018-10-15" thirdDate-constraint="0" expand="true">
+                <depend id="108" type="2" difference="0" hardness="Strong"/>
+                <depend id="110" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="108" name="Разработка основных алгоритмов" meeting="false" start="2018-10-26" duration="4" complete="0" expand="true">
+                <depend id="112" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="110" name="Разработка проекта подсистем" color="#8cb6ce" meeting="false" start="2018-10-29" duration="9" complete="0" thirdDate="2018-10-26" thirdDate-constraint="0" expand="true">
+                <depend id="101" type="2" difference="0" hardness="Strong"/>
+                <depend id="131" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="112" name="Разработка структуры кода" meeting="false" start="2018-11-01" duration="5" complete="0" expand="true">
+                <depend id="101" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="101" name="Проектирование завершено" color="#8cb6ce" meeting="true" start="2018-11-09" duration="0" complete="0" thirdDate="2018-09-13" thirdDate-constraint="0" expand="true">
+            <depend id="95" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="Изучение Qt" color="#000000" meeting="false" start="2018-10-08" duration="38" complete="0" thirdDate="2018-10-05" thirdDate-constraint="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+            <depend id="145" type="2" difference="0" hardness="Strong"/>
+            <task id="56" name="Повторение базового материала" color="#8cb6ce" meeting="false" start="2018-10-08" duration="2" complete="0" thirdDate="2018-10-05" thirdDate-constraint="0" expand="true">
+                <depend id="59" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="59" name="Выбор материала, необходимого для разработки проекта" color="#8cb6ce" meeting="false" start="2018-10-10" duration="1" complete="0" thirdDate="2018-10-09" thirdDate-constraint="0" expand="true">
+                <depend id="62" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="62" name="Изучение выбранного материала" color="#8cb6ce" meeting="false" start="2018-10-11" duration="3" complete="0" thirdDate="2018-10-10" thirdDate-constraint="0" expand="true">
+                <depend id="70" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="70" name="Более глубокое изучение материала" color="#8cb6ce" meeting="false" start="2018-10-16" duration="5" complete="0" thirdDate="2018-10-15" thirdDate-constraint="0" expand="true">
+                <depend id="71" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="71" name="Попытка реализации изученного материала на примере" color="#8cb6ce" meeting="false" start="2018-10-23" duration="4" complete="0" thirdDate="2018-10-22" thirdDate-constraint="0" expand="true">
+                <depend id="110" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="131" name="Изучение материала, необходимого для реализации всех компонентов" color="#8cb6ce" meeting="false" start="2018-11-21" duration="6" complete="0" thirdDate="2018-11-08" thirdDate-constraint="0" expand="true">
+                <depend id="145" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="95" name="Документация создана" color="#8cb6ce" meeting="true" start="2018-11-09" duration="0" complete="0" thirdDate="2018-10-15" thirdDate-constraint="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+            <depend id="145" type="2" difference="0" hardness="Strong"/>
+            <depend id="149" type="2" difference="0" hardness="Rubber"/>
+            <depend id="156" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="7" name="Кодирование" meeting="false" start="2018-11-29" duration="20" complete="0" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+            <task id="145" name="Разработка основной механики игры" meeting="false" start="2018-11-29" duration="9" complete="0" expand="true">
+                <depend id="156" type="1" difference="0" hardness="Strong"/>
+                <depend id="185" type="2" difference="0" hardness="Strong"/>
+                <task id="149" name="Реализация размещения платформ и предметов на них" color="#8cb6ce" meeting="false" start="2018-11-29" duration="9" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true">
+                    <depend id="151" type="1" difference="0" hardness="Rubber"/>
+                    <depend id="185" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="151" name="Реализация персонажа и механики его передвижения" color="#8cb6ce" meeting="false" start="2018-11-29" duration="9" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true">
+                    <depend id="185" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="156" name="Реализация интерфейсов" color="#8cb6ce" meeting="false" start="2018-11-29" duration="9" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true">
+                <depend id="158" type="1" difference="0" hardness="Rubber"/>
+                <depend id="185" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="158" name="Реализация подсчета очков и рекордов" color="#8cb6ce" meeting="false" start="2018-11-29" duration="9" complete="0" thirdDate="2018-11-29" thirdDate-constraint="0" expand="true">
+                <depend id="185" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="185" name="Основные модули реализованы" color="#8cb6ce" meeting="true" start="2018-12-12" duration="0" complete="0" thirdDate="2018-11-27" thirdDate-constraint="0" expand="true">
+                <depend id="160" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="160" name="Совмещение реализованных модулей в единое целое" meeting="false" start="2018-12-12" duration="5" complete="0" expand="true">
+                <depend id="164" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="164" name="Реализация дополнительных возможностей" color="#8cb6ce" meeting="false" start="2018-12-19" duration="6" complete="0" thirdDate="2018-12-10" thirdDate-constraint="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="8" name="Тестирование и отладка" meeting="false" start="2018-12-27" duration="5" complete="0" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="Аттестация" meeting="false" start="2019-01-03" duration="4" complete="0" expand="true">
+            <depend id="201" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="201" name="Проект готов" color="#8cb6ce" meeting="true" start="2019-01-09" duration="0" complete="0" thirdDate="2018-12-24" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="2" name="Мирная Софья" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="Морозова Анастасия" function="Default:0" contacts="" phone=""/>
+        <resource id="0" name="Сгибов Игорь" function="Default:0" contacts="" phone=""/>
+        <resource id="3" name="Красильников Александр" function="Default:0" contacts="" phone=""/>
+        <resource id="4" name="Чернобровкин Александр" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="22" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="53" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="56" resource-id="2" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="59" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="62" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="53" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="56" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="62" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="51" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="56" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="62" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="52" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="56" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="62" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="62" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="70" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="71" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
